@@ -1,74 +1,164 @@
-# 📝 Task Manager (MERN Stack)
+📝 Task Manager (MERN Stack)
 
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
-![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+Frontend-React
 
+Backend-Node.js
 
-A powerful and clean **Task Manager** web app built using the **MERN stack** (MongoDB, Express.js, React, Node.js). 
-It helps you manage your tasks with features like priority filtering, night mode, and user profile management.
+Database-MongoDB
 
-Live link - https://task-manager-rfo2.onrender.com
----
-demo login credentials  
-gmail = test@gmail.com
-pass - 123456789
----
-
-## 🚀 Features
--  Login/SignUp
-- 📝 Create, Edit, and Delete tasks  
-- ⚡ Set task **priority** (High / Medium / Low)  
-- 🔍 **Filter tasks** by priority  
-- 📋 View:
-  - All Tasks  
-  - Pending Tasks  
-  - Completed Tasks  
-- 🌙 Toggle between **Light & Night Mode**  
-- 🖼️ Upload & update **profile picture**  
-
----
-
-## 🔧 Technologies Used
-
-- **Frontend**: React, Tailwind CSS (optional)
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (with Mongoose)
-- **Other**: Cloudinary (for profile image upload), JWT (auth)
+A powerful and clean Task Manager Web Application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
+This application helps users manage daily tasks efficiently with authentication, priority filtering, dark mode, and profile management.
 
 
-## ⚙️ Setup Instructions
+🚀 Features
 
-### 📦 Clone & Install
+🔐 User Authentication (JWT based Login & Signup)
 
-```bash
-# Clone the repo
-git clone https://github.com/intensity4143/Task-Manager.git
+📝 Create, Edit & Delete Tasks
+
+⚡ Set Task Priority (High / Medium / Low)
+
+🔍 Filter Tasks by Priority
+
+📋 View:
+
+All Tasks
+
+Pending Tasks
+
+Completed Tasks
+
+🌙 Light & Dark Mode Toggle
+
+🖼️ Upload & Update Profile Picture (Cloudinary Integration)
+
+🔒 Protected Routes & Secure APIs
+
+🛠️ Technologies Used
+
+🔹 Frontend
+
+React.js
+
+Axios
+
+Tailwind CSS (if used)
+
+🔹 Backend
+
+Node.js
+
+Express.js
+
+JWT Authentication
+
+bcrypt (Password Hashing)
+
+🔹 Database
+
+MongoDB
+
+Mongoose
+
+🔹 Cloud Services
+
+Cloudinary (Profile Image Upload)
+
+Render (Deployment)
+
+📁 Project Structure
+
+task-manager/
+
+│
+
+├── backend/
+
+│   ├── controllers/
+
+│   ├── models/
+
+│   ├── routes/
+
+│   ├── middleware/
+
+│   └── server.js
+
+│
+├── frontend/
+
+│   ├── src/
+
+│   └── public/
+
+│
+
+└── README.md
+
+
+⚙️ Installation & Setup
+
+1️⃣ Clone the Repository
+git clone https://github.com/PradeepChintala2005/task-manager.git
+
 cd task-manager
 
-# Install backend dependencies
+2️⃣ Backend Setup
 cd backend
+
 npm install
 
-# Install frontend dependencies
-cd ../frontend
+npm run dev
+
+Create a .env file inside backend:
+
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+
+CLOUDINARY_API_KEY=your_api_key
+
+CLOUDINARY_API_SECRET=your_api_secret
+
+3️⃣ Frontend Setup
+
+cd frontend
+
 npm install
 
-▶️ Run the App
-# Start backend
-cd backend
 npm run dev
 
-# Start frontend
-cd ../frontend
-npm run dev
+🔐 Authentication Flow
 
-🌐 Live Demo
-🔗 https://task-manager-rfo2.onrender.com
+User registers with email & password
+
+Password is hashed using bcrypt
+
+JWT token is generated on login
+
+Protected routes verify token before granting access
 
 🧠 Future Improvements
-Task deadlines and due reminders
 
-✨ Author
-Made with ❤️ by Your Intensity
+Task deadlines & reminders
+
+Email notifications
+
+Drag & Drop task reordering
+
+Mobile responsive improvements
+
+Deployment with CI/CD
+
+👨‍💻 Author
+
+Pradeep Chintala
+🔗 GitHub: https://github.com/PradeepChintala2005
+
+📜 License
+
+This project is licensed under the MIT License.
