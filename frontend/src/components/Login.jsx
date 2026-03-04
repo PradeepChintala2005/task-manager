@@ -9,7 +9,7 @@ import { Mail, Lock, LogIn   } from "lucide-react";
 function Login(props) {
   const navigate = useNavigate();
   // server url
-  const url = "https://task-manager-backend-srzi.onrender.com";
+  const url = "https://task-manager-cssf.onrender.com/";
 
   const handleLogin = async (data) => {
     try {

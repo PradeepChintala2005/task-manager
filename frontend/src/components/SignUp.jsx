@@ -7,7 +7,7 @@ import { ContactRound, Mail, Lock, UserPlus } from "lucide-react";
 
 const SignUp = () => {
   const navigate = useNavigate();
-  const url = "https://task-manager-backend-srzi.onrender.com";
+  const url = "https://task-manager-cssf.onrender.com/";
 
   const {
     register,
